@@ -19,7 +19,7 @@ input[type="text"] {
 	color:  #ec5a62;
 }
 input[type="image"] {
-	width: 5%;
+	width: 6%;
 
 }
 aside {
@@ -59,6 +59,7 @@ a {
 a:hover {
 	background-color: rgba(118,117,128,0.1);
 	color: #ec5a62;
+	border-radius: 5%;
 }
 a:active {
 	color: #ec5a62;
