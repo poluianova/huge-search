@@ -4,57 +4,60 @@ body {
 	font-family: Arial, sans-serif;
 }
 main {
-	max-width: 70%;
+	max-width: 1000px;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 50px;
+	padding-top: 50px;
 }
-input[type="text"] {
+input.ba-search {
 	outline: none;
 	border: none;
 	background: #F1F1F1;
 	font-size: 600%;
 	font-weight: bold;
-	width: 77%;
+	width: 83%;
 	color:  #ec5a62;
 }
-input[type="image"] {
-	width: 6%;
-
+button.ba-button {
+	background: url(../img/magnifier.svg) no-repeat;
+	padding: 0;
+	border: none;
+	width: 62px;
+	height: 62px;
 }
-aside {
+main aside {
 	display: inline-block;
-	margin-top: 25px;
-	width: 25%;
+	padding: 0;
+	padding-top: 50px;
+	width: 30%;
+	box-sizing: border-box;
+	vertical-align: top;
 }
-h1 {
+aside.ba-people,aside.ba-popular {
+	padding-right: 5%;
+}
+
+main h1 {
 	text-transform: uppercase;
 	font-size: 95%;
 	font-weight: 900;
+	margin: 0;
 }
-ul {
+main ul {
 	list-style-type: none;
 	padding: 0;
 }
-li {
-	background-repeat: no-repeat;
-	background-size: 15%;
-	background-position: left 10px top 10px;
 
-}
-a {
+main a {
 	background-color: rgba(118,117,128,0.05);
-	margin-bottom: 5px;
 	text-decoration: none;
 	color: #c2c2c2;
-	font-size: 75%;
-	font-weight: 700;
+	font-size: 70%;
+	font-weight: bold;
 	display: block;
-	height: 40px;
-	overflow: hidden;
-	padding-left: 65px;
-	padding-top: 20px;
-
+	padding-top: 10px;
+	padding-left: 10px;
+	margin-bottom: 5px;
 }
 a:hover {
 	background-color: rgba(118,117,128,0.1);
@@ -64,62 +67,17 @@ a:hover {
 a:active {
 	color: #ec5a62;
 }
-.ba-people, .ba-popular {
-	margin-right: 40px;
+main img {
+	vertical-align: middle;
+	display: inline-block;
+	width: 50px;
 }
-
-.ba-people li:first-child {
-	background-image: url(../img/avatars/SaraSoueidan.jpeg);
-
+main h3 {
+	vertical-align: middle;
+	display: inline-block;
+	padding-left: 10px;
+	max-width: calc(100% - 70px);
 }
-.ba-people li:nth-child(2) {
-	background-image: url(../img/avatars/RachelSmith.png);
-}
-.ba-people li:nth-child(3) {
-	background-image: url(../img/avatars/PeterFinlan.jpeg);
-}
-.ba-people li:nth-child(4) {
-	background-image: url(../img/avatars/PatrickCox.png);
-}
-.ba-people li:nth-child(5) {
-	background-image: url(../img/avatars/TimHolman.jpeg);
-}
-.ba-people li:last-child {
-	background-image: url(../img/avatars/ShaunDona.jpeg);
-}
-.ba-popular li:first-child {
-	background-image: url(../img/thumbs/PagePreloadingEffect.png);
-}
-.ba-popular li:nth-child(2) {
-	background-image: url(../img/thumbs/ArrowNavigationStyles.png);
-}
-.ba-popular li:nth-child(3) {
-	background-image: url(../img/thumbs/HoverEffectsIdeasNew.png);
-}
-.ba-popular li:nth-child(4) {
-	background-image: url(../img/thumbs/FreebieHalcyonDays.png);
-}
-.ba-popular li:nth-child(5) {
-	background-image: url(../img/thumbs/ArticleIntroEffects.png);
-}
-.ba-popular li:last-child {
-	background-image: url(../img/thumbs/DraggableDualViewSlideshow.png);
-}
-.ba-recent li:first-child {
-	background-image: url(../img/thumbs/TooltipStylesInspiration.png);
-}
-.ba-recent li:nth-child(2) {
-	background-image: url(../img/thumbs/AnimatedHeaderBackgrounds.png);
-}
-.ba-recent li:nth-child(3) {
-	background-image: url(../img/thumbs/OffCanvas.png);
-}
-.ba-recent li:nth-child(4) {
-	background-image: url(../img/thumbs/TabStyles.png);
-}
-.ba-recent li:nth-child(5) {
-	background-image: url(../img/thumbs/ResponsiveSVGs.png);
-}
-.ba-recent li:last-child {
-	background-image: url(../img/thumbs/NotificationStyles.png);
+aside.ba-people img {
+	border-radius: 50%;
 }
